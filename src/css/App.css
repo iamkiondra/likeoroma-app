@@ -1,0 +1,574 @@
+/** Basic Styling. */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 
+    sans-serif;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+p {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-size: 18px;
+    color: rgb(175, 175, 175);
+}
+
+/** Navigation Bar. */
+nav {
+    display: flex;
+    justify-content: space-around;
+    min-height: 8hv;
+    position: absolute;
+    width: 100%;
+    align-items: center;
+    margin-top: 2%;
+}
+
+hr {
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 15%;
+    width: 70%;
+    border-color:  rgba(176, 35, 204, 0.2);
+}
+
+li {
+    list-style: none;
+}
+
+.navBar_header {
+    background-color: rgba(176, 35, 204, 0.9);
+    height: 60px;
+    transition: .3s;
+    position: fixed;  
+    margin-top: 0px;  
+}
+
+.nav_header {       
+    transition: .5s;
+    height: 60px;
+    line-height: 60px;
+    padding-top: 0px;
+}
+
+.link.navlinks.nav_header:hover {
+      color: #af0dcf;
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    width: 5%;
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 22px;
+    margin-left: 65%;
+    font-weight: lighter;
+}
+
+.link {
+    letter-spacing: 1px;
+}
+
+.link a {
+    color: rgba(255, 255, 255, .85);
+}
+
+.link a:hover {
+    color: rgb(24, 226, 237, 1);
+    font-style: bold;
+    font-weight: 400;
+}
+
+.logo {
+    display: flex;
+    color: whitesmoke;
+    font-size: 36px;
+    font-family: 'The Girl Next Door', cursive;
+}
+
+.logo h4 {
+    margin-left: 0;
+    letter-spacing: 1px;
+    font-weight: lighter;
+}
+
+.heart_logo {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-top: 18px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+
+/** Main Section. */
+.main {
+    background: 
+    radial-gradient(at center center,
+     #2d7e9270 0%,
+     #1c40617c 100%),
+     url("../images/glitch-lab-app-2d0Mk82TGI8-unsplash.jpg");
+    height: 100vh;
+    background-size: center;
+    background-position: center;
+}
+
+.hero {
+    max-width: 800px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 34px;
+    color: white;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 22px;
+    color: white;
+    font-weight: lighter;
+    letter-spacing: 4px;
+    padding-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+
+}
+
+#hero_social_icons .fa.fa-instagram.fab.fa-instagram,
+#hero_social_icons .fa.fa-facebook.fab.fa-facebook,
+#hero_social_icons .fa.fa-twitter.fab.fa-twitter {
+    color: white;
+    font-size: 52px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.btn_services {
+    border: white solid 1px;
+    border-radius: 16px;
+    background-color: transparent;
+    color: white;
+    padding: 10px 50px;
+    margin: 0 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.btn_services:hover {
+    font-size: 22px;
+    background-color: #0dc2cf;
+    border: none;
+}
+
+.hero_btn_services a {
+    color: white;
+}
+
+#try_social_btn {
+    padding-top: 30px;
+    display: flex;
+}
+
+.btn-text {
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+
+/** The like photo service section. */
+
+.form_container {
+    min-height: 727px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.form_input_container {
+    width: 50%;
+    margin-top: 0;
+    margin-left: 0;
+    display: flex;
+}
+
+.form_input_header {
+    font-size: 34px;
+    color: gray;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin: auto;
+    text-align: center;
+    padding-top: 10%; 
+    padding-bottom: 5%; 
+    position: relative; 
+}
+
+.font_header_heart {
+    color:  rgba(176, 35, 204, 0.4);
+    padding: 10px;
+}
+
+#form_header {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form_header_hash {
+    color:  rgb(24, 226, 237, 1);
+    font-size: 44px;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+.form_user_input {
+    font-size: 15px;
+    border: gray solid 1px;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-top: 1.5%;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-bottom: 0px;
+    text-align: center;
+    padding-top: 25px; 
+    padding-bottom: 25px;
+    width: 300px;
+    height: 40px;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+.form_user_input:active {
+    border:rgba(11, 198, 223, 0.63);
+}
+
+.submit_btn {
+    font-size: 15px;
+    border: none;
+    background-color: #0dc2cf;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-top: 2%;
+    margin-left: 39%;
+    margin-right: auto;
+    margin-bottom: 1%;
+    text-align: center;
+    padding-top: 8px; 
+    padding-bottom: 25px;
+    width: 120px;
+    height: 18px;
+    vertical-align: middle;
+    border-radius: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.submit_btn:hover {
+    background-color: #af0dcf;
+    margin-left: 40%;
+}
+
+.reset_btn {
+    font-size: 15px;
+    border: none;
+    background-color: #af0dcf;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-top: 2%;
+    margin-left: 10%;
+    margin-right: 0px;
+    margin-bottom: 3%;
+    text-align: center;
+    padding-top: 8px; 
+    padding-bottom: 25px;
+    width: 120px;
+    height: 18px;
+    vertical-align: middle;
+    border-radius: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.reset_btn:hover {
+    background-color: #0dc2cf;
+    margin-left: 12%;
+}
+
+.image_container {
+    width: 50%;
+    height:auto;
+    background-image: url("../images/ian-dooley-FgSyP02I0gw-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: none;
+    display: flex;
+}
+
+.profile_img {
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
+}
+
+.photo_img {
+    border-radius: 10px;
+    width: 600px;
+    height: 400px;
+    margin-left:10%;
+    margin-right: auto;
+    margin-top: 3%;
+}
+
+.profile_info {
+    margin-top: 30px;
+    margin-left: 15px;
+    margin-right: 20px;
+    text-align: left;
+    font-size: 24px;
+}
+
+.photo_likes_results {
+    color:  rgba(176, 35, 204, 0.9);
+    padding: 10px;
+    letter-spacing: 1px;
+    margin-left: 8%;
+    font-size: 25px;
+}
+
+.photo_tags {
+    font-size: 14px;
+    margin-left: 10%;
+    color:  #0dc2cf;
+}
+
+
+.results_container {
+    font-size: 34px;
+    color: gray;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12%;
+    text-align: center;
+    padding-top: 20px;
+    display:flex;
+}
+
+.profile_container {
+    display: flex;
+    align-items: center;
+    margin-left: 10%; 
+}
+
+.profile_container div {
+    display: block;
+    margin-top: 10px;
+}
+
+.seperator {
+    margin-top: 3%;
+    margin-bottom: 4%;
+    margin-left: 20%;
+    width: 50%;
+    border-color:  rgba(176, 35, 204, 0.2);
+}
+
+.verticalLine {
+    border-right: 2px solid rgba(176, 35, 204, 0.2);
+}
+
+/** Technology Solutions Section. */
+.info_tech {
+    min-height: 600px;
+    width: 100%;
+    background-color: whitesmoke;
+    display: flex;
+}
+
+.info_header {
+    width: 100%;
+}
+
+.tech_header {
+    font-size: 24px;
+    color: gray;
+    font-weight: normal;
+    letter-spacing: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 25px;  
+    width: 100%;
+}
+
+.description_container,
+.frontend_container,
+.backend_container {
+    display: inline-flex;
+    width: 25%;
+    font-size: 24px;
+    color: gray;
+    letter-spacing: 3px;
+    margin-left: 8%;
+    margin-right: 0;
+    margin-bottom: 15px;
+    text-align: center;
+    padding-top: 50px;  
+}
+
+.tech_container_title {
+    font-size: 18px;
+}
+
+/** Footer */
+.footer_container {
+    font-size: 16px;
+    vertical-align: middle;
+    margin-top: 18px;
+    padding-left: 3%;
+    padding-right: 5px;
+    min-height: 50px;
+    color:  rgba(176, 35, 204, 0.8);
+    font-weight: lighter;
+    text-align: center;
+}
+
+.heart_logo_footer_link {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+
+/** Styling for Mobile Responsive Format.  */
+@media screen and (max-width: 700px) {
+    body {
+        overflow-x: hidden;
+    }
+ 
+    .btn_services {
+       margin-bottom: 15px;
+    }
+
+    #try_social_btn {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image_container {
+        display: none;
+    }
+
+    .form_input_header {
+        margin-left: 22%;
+        font-size: 20px;
+        padding-left: 0px;
+    }
+
+    .form_header_hash {
+        color:  rgb(24, 226, 237, 1);
+        font-size: 24px;
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+    #form_input_header {
+        margin-left: 20%;
+        font-size: 18px;
+    }
+
+    #form_section {
+        margin-left: 10px;
+    }
+
+    #user_id_input,
+    #photo_id_input {
+        margin-left: 15%;
+    }
+
+}
+
+/* Styling for iPad  */
+@media screen and (max-width: 800px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    nav {
+        margin-top: 4%;
+    }
+ 
+    .btn_services {
+       margin-bottom: 15px;
+    }
+
+    #try_social_btn {
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .form_input_header {
+        margin-left: 2%;
+        font-size: 30px;
+        padding-left: 0px;
+    }
+
+    .form_header_hash {
+        color:  rgb(24, 226, 237, 1);
+        font-size: 24px;
+        padding: 10px;
+        vertical-align: middle;
+    }
+
+    #form_input_header {
+        margin-left: 20%;
+        font-size: 18px;
+    }
+
+    #form_section {
+        margin-left: -10px;
+    }
+
+    #user_id_input,
+    #photo_id_input {
+        margin-left: 15%;
+    }
+
+}
+
+/* Styling for iPad Pro */
+@media screen and (max-width: 1040px) {
+
+    nav {
+        margin-top: 4%;
+    }
+ 
+}
+
