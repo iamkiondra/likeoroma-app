@@ -7,8 +7,8 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^3.1.2",
-    "bootstrap": "4.6.0",
+    "babel-preset-react-app": "^10.0.1",
+    "bootstrap": "^5.3.3",
     "git": "^0.1.5",
     "react": "^17.0.2",
     "react-bootstrap": "^1.6.0",
@@ -16,12 +16,13 @@
     "react-fontawesome": "^1.7.1",
     "react-responsive-modal": "^6.0.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-scripts": "^5.0.1",
     "react-scroll": "^1.8.2",
     "react-spinners": "^0.11.0",
     "reactstrap": "^8.9.0",
-    "update": "^0.7.4",
-    "web-vitals": "^1.0.1"
+    "update": "^0.4.2",
+    "web-vitals": "^1.0.1",
+    "yarn": "^1.22.22"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -40,11 +41,6 @@
       ">0.2%",
       "not dead",
       "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
     ]
   }
 }
